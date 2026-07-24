@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>BEVALALA F.C | Devenir Sponsor</title>
+
+<link rel="stylesheet"
+href="css/style.css">
+
+<link rel="stylesheet"
+href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+<div class="container navbar">
+
+<a href="index.html"
+class="logo">
+
+<img src="images/logo.jpeg">
+
+<div>
+
+<h2>BEVALALA FC</h2>
+
+<span>
+PLUS QU'UN CLUB, UNE FAMILLE
+</span>
+
+</div>
+
+</a>
+
+
+<nav id="nav">
+
+<a href="index.html">
+Accueil
+</a>
+
+<a href="about.html">
+À propos
+</a>
+
+<a href="equipe.html">
+Équipe
+</a>
+
+<a href="sponsoring.html"
+class="active">
+Sponsoring
+</a>
+
+<a href="contact.html">
+Contact
+</a>
+
+</nav>
+
+
+<button class="menu-btn"
+onclick="toggleMenu()">
+
+<i class="fa-solid fa-bars"></i>
+
+</button>
+
+</div>
+
+</header>
+
+
+
+<section class="page-hero sponsor-hero">
+
+<div class="container">
+
+<h1>
+DEVENEZ NOTRE SPONSOR
+</h1>
+
+<p>
+Associez votre marque à la passion
+du football.
+</p>
+
+</div>
+
+</section>
+
+
+
+<section class="section">
+
+<div class="container sponsor-intro">
+
+<div>
+
+<span class="section-label">
+POURQUOI NOUS SOUTENIR ?
+</span>
+
+<h2>
+
+SOUTENEZ LE BEVALALA FC
+
+<span>
+ET FAITES GRANDIR LE SPORT
+</span>
+
+</h2>
+
+<p>
+
+Votre entreprise peut devenir un acteur
+important du développement du football.
+
+En soutenant le BEVALALA FC, vous contribuez
+à la formation des jeunes joueurs tout en
+augmentant la visibilité de votre marque.
+
+</p>
+
+</div>
+
+
+<div class="sponsor-cards">
+
+
+<div>
+
+<i class="fa-solid fa-eye"></i>
+
+<h3>
+Visibilité
+</h3>
+
+<p>
+Votre marque visible sur nos supports
+de communication.
+</p>
+
+</div>
+
+
+<div>
+
+<i class="fa-solid fa-users"></i>
+
+<h3>
+Communauté
+</h3>
+
+<p>
+Touchez une communauté passionnée
+par le football.
+</p>
+
+</div>
+
+
+<div>
+
+<i class="fa-solid fa-futbol"></i>
+
+<h3>
+Développement
+</h3>
+
+<p>
+Participez au développement
+du football local.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- FORMULAIRE -->
+
+<section class="sponsor-form-section">
+
+<div class="container sponsor-form-grid">
+
+
+<div class="sponsor-form-info">
+
+<h2>
+DEVENEZ
+<span>PARTENAIRE</span>
+</h2>
+
+<p>
+
+Vous êtes une entreprise ou une organisation
+et vous souhaitez soutenir le BEVALALA FC ?
+
+Remplissez le formulaire et notre équipe
+vous contactera rapidement pour discuter
+des différentes possibilités de partenariat.
+
+</p>
+
+
+<div class="contact-mini">
+
+<p>
+<i class="fa-solid fa-phone"></i>
++261 34 52 408 54
+</p>
+
+<p>
+<i class="fa-solid fa-envelope"></i>
+jeanlouis02nomen@gmail.com
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="form-container">
+
+
+<form action="php/send-sponsoring.php"
+method="POST">
+
+
+<div class="form-row">
+
+<div>
+
+<label>
+Nom de l'entreprise *
+</label>
+
+<input
+type="text"
+name="company"
+required>
+
+</div>
+
+
+<div>
+
+<label>
+Nom du responsable *
+</label>
+
+<input
+type="text"
+name="name"
+required>
+
+</div>
+
+</div>
+
+
+
+<div class="form-row">
+
+<div>
+
+<label>
+Email *
+</label>
+
+<input
+type="email"
+name="email"
+required>
+
+</div>
+
+
+<div>
+
+<label>
+Téléphone *
+</label>
+
+<input
+type="tel"
+name="phone"
+required>
+
+</div>
+
+</div>
+
+
+
+<div>
+
+<label>
+Type de partenariat
+</label>
+
+<select name="partnership">
+
+<option>
+Sponsor principal
+</option>
+
+<option>
+Sponsor officiel
+</option>
+
+<option>
+Partenaire média
+</option>
+
+<option>
+Partenaire équipementier
+</option>
+
+<option>
+Autre
+</option>
+
+</select>
+
+</div>
+
+
+
+<div>
+
+<label>
+Votre message
+</label>
+
+<textarea
+name="message"
+rows="6"
+placeholder="Présentez votre entreprise et votre proposition..."></textarea>
+
+</div>
+
+
+
+<button
+type="submit"
+class="btn btn-gold">
+
+Envoyer ma demande
+
+<i class="fa-solid fa-paper-plane"></i>
+
+</button>
+
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+<div class="copyright">
+
+© 2026 BEVALALA FC -
+Tous droits réservés.
+
+</div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

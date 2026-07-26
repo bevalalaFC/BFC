@@ -1,5 +1,26 @@
-[build]
-  functions = "netlify/functions"
-
-[build.environment]
-  SECRETS_SCAN_OMIT_PATHS = "node_modules/nodemailer/lib/well-known/services.json"
+diff --git a/F:\BFC\BFC\netlify.toml b/F:\BFC\BFC\netlify.toml
+--- a/F:\BFC\BFC\netlify.toml
++++ b/F:\BFC\BFC\netlify.toml
+@@ -1,5 +1,18 @@
+-[build]
+-  functions = "netlify/functions"
++[build]
++  # Le site est un projet HTML statique : les pages se trouvent à la racine.
++  # Cette option évite un déploiement sans index.html (erreur 404 Netlify).
++  publish = "."
++  functions = "netlify/functions"
++
++[[redirects]]
++  from = "/sponsoring"
++  to = "/sponsoring.html"
++  status = 200
++
++[[redirects]]
++  from = "/merci"
++  to = "/merci.html"
++  status = 200
+ 
+ [build.environment]
+-  SECRETS_SCAN_OMIT_PATHS = "node_modules/nodemailer/lib/well-known/services.json"
+\ No newline at end of file
++  SECRETS_SCAN_OMIT_PATHS = "node_modules/nodemailer/lib/well-known/services.json"

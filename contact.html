@@ -201,62 +201,21 @@ Nous contacter sur WhatsApp
 <div class="contact-form-box">
 
 
-<form
-name="contact"
-method="POST"
-action="/merci.html"
-data-netlify="true"
-data-netlify-honeypot="bot-field">
+<form name="contact" method="POST" netlify action="/merci.html">
+  <input type="hidden" name="form-name" value="contact">
 
-<input type="hidden" name="form-name" value="contact">
+  <input type="text" name="name" placeholder="Votre nom" required>
 
-<p hidden>
-<label>
-Ne pas remplir ce champ :
-<input name="bot-field">
-</label>
-</p>
+  <input type="email" name="email" placeholder="Votre email" required>
 
+  <input type="text" name="subject" placeholder="Sujet" required>
 
-<input
-type="text"
-name="name"
-placeholder="Votre nom"
-required>
+  <textarea name="message" rows="7" placeholder="Votre message" required></textarea>
 
-
-<input
-type="email"
-name="email"
-placeholder="Votre email"
-required>
-
-
-<input
-type="text"
-name="subject"
-placeholder="Sujet"
-required>
-
-
-<textarea
-name="message"
-rows="7"
-placeholder="Votre message"
-required></textarea>
-
-
-<button
-class="btn btn-gold"
-type="submit">
-
-Envoyer le message
-
-</button>
-
-
+  <button class="btn btn-gold" type="submit">
+    Envoyer le message
+  </button>
 </form>
-
 </div>
 
 

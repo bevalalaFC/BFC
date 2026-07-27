@@ -202,9 +202,7 @@ Nous contacter sur WhatsApp
 <div class="contact-form-box">
 
 
-<form name="contact" method="POST" netlify action="/merci.html">
-  <input type="hidden" name="form-name" value="contact">
-
+<form id="contact-whatsapp">
   <input type="text" name="name" placeholder="Votre nom" required>
 
   <input type="email" name="email" placeholder="Votre email" required>
@@ -214,7 +212,7 @@ Nous contacter sur WhatsApp
   <textarea name="message" rows="7" placeholder="Votre message" required></textarea>
 
   <button class="btn btn-gold" type="submit">
-    Envoyer le message
+    Envoyer le message sur WhatsApp
   </button>
 </form>
 </div>
@@ -243,3 +241,27 @@ Tous droits réservés.
 </body>
 
 </html>
+<script>
+  document.getElementById("contact-whatsapp").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const name = this.name.value;
+    const email = this.email.value;
+    const subject = this.subject.value;
+    const message = this.message.value;
+
+    const text =
+      "Bonjour BEVALALA FC,%0A%0A" +
+      "*Nom :* " + name + "%0A" +
+      "*E-mail :* " + email + "%0A" +
+      "*Sujet :* " + subject + "%0A%0A" +
+      "*Message :*%0A" + message;
+
+    const whatsappNumber = "261345240854";
+
+    window.open(
+      "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(text),
+      "_blank"
+    );
+  });
+</script>
